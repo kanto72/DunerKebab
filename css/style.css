@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+}
+
+ /*лого в хэдер*/
+.logo {
+    width: 80px;
+    height: 60px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
+/*Верхний контейнер*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+/*Стилизуем шапку расположение*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+/*Общий класс для Инпута*/
+.input {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    background-position:  left 11px center;
+    padding: 8px;
+}
+/*Стилизуем строку поиска*/
+.input-address {
+    flex: 0.8;
+    background-image: url(../img/home.svg);
+    padding-left: 35px;
+}
+/*Инпут поиска блюда*/
+.input-search {
+    width: 220px;
+    background-image: url(../img/search.png);
+    padding-left: 35px;
+}
+/*Стилизуем контейнер кнопок*/
+.buttons {
+    display: flex;
+    align-items: center;
+}
+/*Стилизуем кнопки*/
+.button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+}
+/*Синяя кнопка Войти*/
+.button-primary {
+    background: #1890ff;
+    border: 1px solid #1890ff;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+/*Иконка синей кнопки, стилизуем*/
+.button-icon {
+    margin-right: 6px;
+}
+/*Стилизуем кнопку Вкорзину у товара*/
+.button-card-text {
+    margin-right: 10px;
+}
+/*Стилизуем блок ниже шапки*/
+.promo {
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: rgb(22, 22, 22) url(../img/promo-duner.png) no-repeat  top 0px right 90px/480px;
+    border-radius: 10px;
+    padding: 68px 70px;
+    margin-bottom: 56px;
+}
+/*Стилизуем текст в блоке*/
+.promo-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 490px;  
+    color: #ffffff;  
+}
+
+/*Стилизуем Текст шапки*/
+.promo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    color: #ffffff;
+}
+/*Окрашиваем задний фон*/
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+/*Ровняем и стилизуем секцию*/
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+/*Стилизуем Заголовок*/
+.section-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+    color: #000;
+}
+/*Блок с карточками*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/*Карточка*/
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    flex-basis: 30%;
+}
+/*Фото карточки(в карточке)*/
+.card-image {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+/*Текст в карточке*/
+.card-text {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+/*Заголовок в карточке*/
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Стилизуем текст*/
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+/*Стилизуем Время(тэг)*/
+.card-tag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+}
+/*Ровняем блок с информацией*/
+.card-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*Кнопка Карточки*/
+.card-buttons {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+/*Рейтинг стилизуем*/
+.rating {
+    margin-right: 26px;
+    color: #FFc107;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+/*Стилизуем цену*/
+.price {
+    color: #8c8c8c;
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 10px;
+}
+/*Добавляем Точку между PRICE and Category*/
+.price::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8c8c8c;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/*Стилизуем категорию*/
+.category {
+    color: #8c8c8c;
+    font-size: 18px;
+    line-height: 32px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 150px;
+}
+/*Стилизуем подвал*/
+.footer {
+    padding: 60px 0;
+
+}
+/*Размешаем блок подвала*/
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Прибиваем к левой стороне*/
+.footer-nav {
+    margin-left: 35px;
+    margin-right: auto;
+}
+
+/*Стилизуем навигацию*/
+.footer-link {
+    display: inline-block;
+    color: #595959;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 18px;
+}
+/*Делаем отступы у навигации всех кроме правой*/
+.footer-link:not(:last-child){
+    margin-right: 15px;
+}
+/*Выстраиваем ссылки*/
+.social-links {
+    display: flex;
+    align-items: center;
+}
+/*Стилизуем ссылки с права*/
+.social-link:not(:last-child) {
+    margin-right: 21px;
+    text-decoration: none;
+    color: #595959;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 18px;
+}
+/*Делаем модалку корзины*/
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.is-open {
+    display: flex;
+}
+/*Стилизуем модальное окно*/
+.modal-dialog {
+    max-width: 780px;
+    width: 95%;
+    background: #fff;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+}
+/*Разброс по своим местам шапки*/
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+/*Стилизуем шапку*/
+.modal-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+/*Стилизуем крестик*/
+.close {
+    font-size: 36px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.modal-body {
+    margin-bottom: 52px;
+}
+/*Ровняем контекнт корзины*/
+.food-row {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 15px;
+}
+/*Стилизуем Имя позиции*/
+.food-name {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+/*Ровняем цену*/
+.food-price {
+    margin-left: auto;
+    margin-right: 47px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+/*Что бы кнопки збс стояли*/
+.food-counter {
+    display: flex;
+    align-items: center;
+}
+/*Стилизуем кнопку позиции*/
+.counter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 32px;
+    background: #fff;
+    border: 1px solid #40a9ff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #40a9ff;
+}
+.counter {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*Убераем кнопки в право*/
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Доравниваем кнопки*/
+.footer-buttons {
+    display: flex;
+    align-items: center;
+}
+.modal-pricetag {
+    background: #262626;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background-size: 700px;
+        background-position: center top -20px;
+    }
+    .rating {
+        margin-right: 15px;
+    }
+
+    .category, .price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px){
+    .container {
+        max-width: 750px;
+    }
+    .promo {
+        padding: 50px;
+        background-size: 500px;
+        background-position: center;
+    }
+    .promo-text {
+        font-size: 16px;
+        max-width: 400px;
+    }
+    .card {
+        flex-basis: 48%;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 580px;
+    }
+    .card-info{
+flex-wrap: wrap;
+    }
+
+    .rating {
+        flex-basis: 100%;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .promo {
+        background-size: 400px;
+        background-position: right;
+    }
+    .promo-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .promo-text {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .input-address {
+        margin-top: 15px;
+        order: 5;
+        flex: 1;
+    }
+    .promo-title {
+        margin-bottom: 10px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .card-image {
+        width: 100%;
+    }
+    .footer {
+        padding: 30px 0 ;
+    }
+    .footer-block {
+        align-items: flex-start;
+        margin-left: -10px;
+    }
+    .adress {
+        display: none;
+    }
+    .footer-nav {
+        margin-left: 25px;
+        margin-right: 0;
+        order: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-logo {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-text {
+        display: none;
+    }
+    .button-icon {
+        margin: 0;
+    }
+    .button {
+        min-height: 40px;
+    }
+
+    .promo{
+        padding: 20px;
+        background-image: none;
+    }
+
+    .section-heading{
+        flex-wrap: wrap;
+    }
+
+    .footer-block{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo {
+        order: 0;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .footer-nav {
+        margin-bottom: 20px;
+        margin-left: 0;
+        
+    }
+    .footer-link:not(:last-child) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    
+}
